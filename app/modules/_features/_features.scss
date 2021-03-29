@@ -1,0 +1,39 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 10px 60px;
+
+  &__item {
+    max-width: 330px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__icons {
+    color: #5c5c5c;
+    margin-bottom: 50px;
+    font-size: 50px;
+  }
+
+  &__title {
+    @extend %BebasNeue-400;
+    font-size: 33px;
+    color: #0d2e57;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @extend %Montserrat-300;
+    font-size: 13px;
+    color: #8a8a8a;
+    margin-bottom: 15px;
+    line-height: 2;
+  }
+
+  &__link {
+    @extend %Montserrat-600;
+    font-size: 13px;
+    color: #3753da;
+  }
+}

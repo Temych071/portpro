@@ -1,0 +1,92 @@
+.offer {
+  padding: 125px 0px 75px;
+  text-align: center;
+  position: relative;
+  background-color: #f2f0f0;
+
+  &__body {
+    padding: 0px 100px;
+    max-width: 750px;
+    width: 100%;
+  }
+
+  &__label {
+    @extend %Poppins-600;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    color: #616161;
+  }
+
+  &__title {
+    @extend %BebasNeue-400;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #0d2e57;
+  }
+
+  &__text {
+    @extend %Montserrat-300;
+    font-size: 18px;
+    color: #8a8a8a;
+    margin-bottom: 40px;
+    line-height: 1.7;
+  }
+
+  &__new-price {
+    @extend %Montserrat-700;
+    font-size: 52px;
+    color: #3954d9;
+    margin-bottom: 40px;
+    line-height: 1.7;
+  }
+
+  &__old-price {
+    @extend %Montserrat-500;
+    font-size: 33px;
+    color: black;
+    margin-bottom: 65px;
+    line-height: 1.7;
+    margin-left: 65px;
+  }
+
+  &__image {
+    width: 750px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 45px;
+
+  &__item {
+    width: 90px;
+    margin-left: 20px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: white;
+
+    span {
+      @extend %Montserrat-600;
+      color: #2d2b27;
+      display: block;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+
+  &__count {
+    font-size: 39px;
+  }
+
+  &__label {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+}
