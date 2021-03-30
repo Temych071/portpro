@@ -1,0 +1,14 @@
+.partners {
+  display: grid;
+  grid-template-rows:  250px 250px; /* 2 строки */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* 6 столбцjd */
+  position: relative;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+  }
+}

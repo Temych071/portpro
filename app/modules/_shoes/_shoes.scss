@@ -1,7 +1,24 @@
 .shoes {
   display: grid;
   grid-template-rows:  370px 370px 370px; /* 3 строки */
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* 3 столбца */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 столбца */
+  
+
+  &__girl {
+    max-width: 740px;
+    width: 100%;
+    background-image: url(../../images/girl.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    grid-column: 3/5;
+    grid-row: 2;
+  }
+
+  &__running {
+    background-color: black;
+    color: white;
+  }
 }
 
 .shoes-item {
@@ -12,12 +29,16 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  
+  &__image {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
   &__title {
     @extend %BebasNeue-400;
     font-size: 25px;
     color: #0d2e57;
-    margin-top: 50px;
     margin-bottom: 10px;
     text-transform: uppercase;
     display: block;
