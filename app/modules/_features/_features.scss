@@ -37,3 +37,26 @@
     color: #3753da;
   }
 }
+
+@media (max-width: 1500px) {
+  .features {
+    display: grid;
+    grid-template-rows:  1fr 1fr; /* 2 строки */
+    grid-template-columns: 1fr 1fr; /* 2 столбца */
+    grid-row-gap: 25px;
+
+    &__item {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    display: block;
+
+    &__item {
+      margin: 0 auto 20px;
+    }
+  }
+}

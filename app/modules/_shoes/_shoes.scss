@@ -57,3 +57,47 @@
     margin-left: 10px;
   }
 }
+
+@media (max-width: 1200px) {
+  .shoes {
+    grid-template-rows:  auto; /* 3 строки */
+    grid-template-columns: 1fr 1fr 1fr; /* 4 столбца */
+
+    &__girl {
+      grid-column: 2/4;
+      grid-row: 1;
+    }
+  
+    &__running {
+      grid-column: 1/2;
+      grid-row: 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .shoes {
+    grid-template-rows:  auto; /* 3 строки */
+    grid-template-columns: 1fr 1fr; /* 4 столбца */
+
+    &__girl {
+      grid-column: 1/3;
+      grid-row: 1;
+    }
+  
+    &__running {
+      grid-column: 1/2;
+      grid-row: 1;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .shoes {
+    display: block;
+  }
+
+  .shoes-item {
+    margin: 0 auto;
+  }
+}

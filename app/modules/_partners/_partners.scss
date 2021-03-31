@@ -10,5 +10,33 @@
     align-items: center;
     border-left: 1px solid #c7c7c7;
     border-bottom: 1px solid #c7c7c7;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .partners {
+    grid-template-rows:  250px 250px 250px; /* 3 строки */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 столбца */
+
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    grid-template-rows:  250px 250px 250px 250px; /* 3 строки */
+    grid-template-columns: 1fr 1fr 1fr; /* 4 столбца */
+
+  }
+}
+
+@media (max-width: 550px) {
+  .partners {
+    grid-template-rows:  250px 250px 250px 250px 250px 250px; /* 3 строки */
+    grid-template-columns: 1fr 1fr; /* 4 столбца */
+
   }
 }

@@ -61,9 +61,14 @@
     border-radius: 50%;
     background-color: white;
 
-    & + div {
+    & + a {
       margin-left: 20px;
     }
+  }
+
+  &__icon {
+    font-size: 20px;
+    color: black;
   }
 }
 
@@ -77,5 +82,100 @@
     padding: 0 15px;
     background-color: #2f2f2f;
     margin-bottom: 25px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .footer {
+
+    &__body {
+      display: grid;
+      grid-template-rows: 1fr 1fr; /* 3 строки */
+      grid-template-columns: 1fr 1fr; /* 4 столбца */
+      text-align: center;
+      grid-row-gap: 35px;
+    }
+
+    &__column {
+      margin: 0 auto;
+    }
+
+    &__item {
+      margin-bottom: 25px;
+    }
+
+    &__content {
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
+    &__connected {
+      margin: 0 auto 100px;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+
+    &__body {
+      display: block;
+    }
+
+    &__column {
+      margin: 0 auto 100px;
+    }
+
+    &__item {
+      margin-bottom: 25px;
+    }
+
+    &__content {
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
+    &__connected {
+      margin: 0 auto 100px;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 558px) {
+  .footer {
+
+    &__connected {
+      margin: 0 auto 50px;
+    }
+
+    &__contacts {
+      
+      & + a {
+        margin-left: 0px;margin: 0 auto;
+      }
+
+      
+    }
+    
+    &__contacts {
+      margin: 0 auto;
+    }
+    
+    &__content {
+      display: grid;
+      grid-template-rows:  1fr 1fr; /* 2 строки */
+      grid-template-columns: 1fr 1fr 1fr; /* 2 столбца */
+      grid-row-gap: 45px;
+    }
+  }
+
+  .form {
+
+    &__input {
+      width: 80%;
+    }
   }
 }

@@ -1,10 +1,13 @@
 .sports {
   display: grid;
-  grid-template-rows:  370px 370px; /* 3 строки */
+  grid-template-rows:  1fr 1fr; /* 3 строки */
   grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 столбца */
-  position: relative;
+  
 
   &__item {
+    position: relative;
+    overflow: hidden;
+
     &::after {
       content: '';
       position: absolute;
@@ -12,7 +15,38 @@
       left: 0;
       bottom: 0;
       right: 0;
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .sports {
+    grid-template-rows:  auto; /* 3 строки */
+    grid-template-columns: 1fr 1fr 1fr; /* 4 столбца */
+
+    &__item {
+      max-width: 370px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sports {
+    grid-template-rows:  auto; /* 3 строки */
+    grid-template-columns: 1fr 1fr; /* 4 столбца */
+
+  }
+}
+
+@media (max-width: 550px) {
+  .sports {
+    display: block;
+
+    
+    &__item {
+      margin: 0 auto;
     }
   }
 }
